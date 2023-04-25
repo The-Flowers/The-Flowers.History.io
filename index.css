@@ -1,0 +1,379 @@
+/* 清除所有样式 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+/* 内容背景图 */
+body {
+    background-image: url('./imgs/背景全图.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 版心居中 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部内容 */
+/* 头部背景 大图 */
+.nav_bg {
+    position: relative;
+    height: 500px;
+    background-image: url('./imgs/导航背景.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 导航栏背景图 */
+.nav_bg .nav {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1355px;
+    height: 104px;
+    background-image: url('./imgs/nav-背景.png');
+}
+
+/* 导航栏内容位置 */
+.nav_bg .nav .nr {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 1200px;
+}
+
+/* 导航栏具体内容 */
+.nav_bg .nav .nr li a {
+    float: left;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    /* 动态过渡 */
+    transition: all 0.2s;
+}
+
+/* 导航栏鼠标划入效果 */
+.nav_bg .nav .nr li a:hover {
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+/* 内容主体1 */
+.main {
+    margin-top: 10px;
+    padding: 15px;
+    width: 1200px;
+    height: 530px;
+    background-color: white;
+}
+
+/* 内容主体1 左 */
+.main .left {
+    float: left;
+    margin: 0 5px;
+}
+
+/* 内容主体1  右 */
+.main .right {
+    float: right;
+    width: 350px;
+}
+
+.main .right .title {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.main .right li a {
+    display: inline-block;
+    border-bottom: 1px solid rgb(213, 168, 168);
+    margin: 8px 0;
+    width: 350px;
+    height: 55px;
+    color: black;
+    font-weight: bold;
+    /* 内容太多以省略号显示 */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+    /* 过渡效果 */
+    transition: all 0.5s;
+}
+
+/* 内容1 右边鼠标划入 */
+.main .right li a:hover {
+    color: red;
+    margin-left: 10px;
+}
+
+/* 主体内容2 */
+.main_one {
+    margin-top: 30px;
+    height: 500px;
+}
+
+/* 主体内容2  左边 */
+.main_one .left {
+    float: left;
+}
+
+/* 主2 左详 头 */
+.main_one .left .details h2{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 576px;
+    height: 80px;
+    background-color: brown;
+    line-height: 80px;
+    color: white;
+}
+
+.main_one .left .details h2 a{
+    float: right;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.main_one .left .details h2 a:hover {
+    font-size: 20px;
+}
+
+/* 主2 左详 li */
+.main_one .left .details .details_li{
+    padding: 20px 40px;
+    width: 576px;
+    height: 346px;
+    background-color: #fff;
+}
+
+.main_one .left .details .details_li li a {
+    display: inline-block;
+    border-bottom: 1px solid burlywood;
+    width: 515px;
+    height: 50px;
+    line-height: 50px;
+    /* 内容超长改省略 */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /* 动态 */
+    transition: all 0.2s;
+    color: black;
+}
+
+.main_one .left .details .details_li li a:hover {
+    margin-left: 15px;
+    color: red;
+}
+
+/* 内容2  右 */
+/* 主体内容2  右边 */
+.main_one .right {
+    float: right;
+}
+
+/* 主2 右详 头 */
+.main_one .right .details h2{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 576px;
+    height: 80px;
+    background-color: brown;
+    line-height: 80px;
+    color: white;
+}
+
+.main_one .right .details h2 a{
+    float: right;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.main_one .right .details h2 a:hover {
+    font-size: 20px;
+}
+
+/* 主2 右详 li */
+.main_one .right .details .details_li{
+    padding: 20px 40px;
+    width: 576px;
+    height: 346px;
+    background-color: #fff;
+}
+
+.main_one .right .details .details_li li a {
+    display: inline-block;
+    border-bottom: 1px solid burlywood;
+    width: 515px;
+    height: 50px;
+    line-height: 50px;
+    /* 内容超长改省略 */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /* 动态 */
+    transition: all 0.2s;
+    color: black;
+}
+
+.main_one .right .details .details_li li a:hover {
+    margin-left: 15px;
+    color: red;
+}
+
+/* 主体内容3 */
+.main_two {
+    margin-top: 30px;
+    height: 500px;
+}
+
+/* 主体内容3  左边 */
+.main_two .left {
+    float: left;
+}
+
+/* 主3 左详 头 */
+.main_two .left .details h2{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 576px;
+    height: 80px;
+    background-color: brown;
+    line-height: 80px;
+    color: white;
+}
+
+.main_two .left .details h2 a{
+    float: right;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.main_two .left .details h2 a:hover {
+    font-size: 20px;
+}
+
+/* 主3 左详 li */
+.main_two .left .details .details_li{
+    padding: 20px 40px;
+    width: 576px;
+    height: 346px;
+    background-color: #fff;
+}
+
+.main_two .left .details .details_li li a {
+    display: inline-block;
+    border-bottom: 1px solid burlywood;
+    width: 515px;
+    height: 50px;
+    line-height: 50px;
+    /* 内容超长改省略 */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /* 动态 */
+    transition: all 0.2s;
+    color: black;
+}
+
+.main_two .left .details .details_li li a:hover {
+    margin-left: 15px;
+    color: red;
+}
+
+/* 内容3  右 */
+/* 主体内容3  右边 */
+.main_two .right {
+    float: right;
+}
+
+/* 主3 右详 头 */
+.main_two .right .details h2{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 576px;
+    height: 80px;
+    background-color: brown;
+    line-height: 80px;
+    color: white;
+}
+
+.main_two .right .details h2 a{
+    float: right;
+    font-weight: normal;
+    font-size: 18px;
+    color: white;
+}
+
+.main_two .right .details h2 a:hover {
+    font-size: 20px;
+}
+
+/* 主3 右详 li */
+.main_two .right .details .details_li{
+    padding: 20px 40px;
+    width: 576px;
+    height: 346px;
+    background-color: #fff;
+}
+
+.main_two .right .details .details_li li a {
+    display: inline-block;
+    border-bottom: 1px solid burlywood;
+    width: 515px;
+    height: 50px;
+    line-height: 50px;
+    /* 内容超长改省略 */
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    /* 动态 */
+    transition: all 0.2s;
+    color: black;
+}
+
+.main_two .right .details .details_li li a:hover {
+    margin-left: 15px;
+    color: red;
+}
+
+/* 尾部图片 */
+.img::after{
+    content: "";
+    clear: both;
+    display: block;
+}  
+
+.img li img{
+    float: left;
+    margin: 35px 7px;
+}
+
+/* 尾部鸣谢 */
+.end {
+    padding: 30px;
+    width: 1520px;
+    height: 97px;
+    background-color: rgb(196, 18, 18);
+}
+
+.end span{
+    color: white;
+    font-size: 24px;
+}
